@@ -7,7 +7,7 @@ const path = require('path');
 const app = express();
 
 // Replace the URL and cookies with your actual values
-const targetURL = 'https://terminator.aeza.net/';
+const targetURL = 'https://venge.io/';
 
 const cookies = [
   // ... (your cookie objects here)
@@ -28,9 +28,11 @@ app.get('/redirect10', (req, res) => {
 
 // Serve the index.html when explicitly requested
 // Serve the index.html when explicitly requested
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
+app.get('/hacks', (req, res) => {
+  res.sendFile(path.join(__dirname, 'GIVEMEHACKS.html'));
 });
+
+
 // Serve the index.html when explicitly requested
 // Serve the index.html when explicitly requested
 app.get('/loading.mp4', (req, res) => {
