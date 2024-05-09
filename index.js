@@ -28,8 +28,8 @@ app.get('/redirect10', (req, res) => {
 
 // Serve the index.html when explicitly requested
 // Serve the index.html when explicitly requested
-app.get('/hacks', (req, res) => {
-  res.sendFile(path.join(__dirname, 'GIVEMEHACKS.html'));
+app.get('/hacks.html', (req, res) => {
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 
